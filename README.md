@@ -1,11 +1,17 @@
 # PaperRegister
 
-PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical Register Indexing 
+PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical Register Indexing (ACL 2026)
 
-(*The code is currently being organized, and the final version of the code is planned to be completed after the paper is officially published*)
+![](utils/method.png)
 
-![](utils/method.PNG)
 
+### Prepare Data
+```bash
+mkdir registration && cd ./registration
+
+
+download raw_papers.json from https://drive.google.com/file/d/1BvNyQoDeo16ezm7Kzj-bcqIYw-LhzOzX/view?usp=drive_link 
+```
 
 ### Offline Hierarchical Indexing
 
