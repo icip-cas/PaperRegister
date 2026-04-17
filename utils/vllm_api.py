@@ -6,7 +6,7 @@ class VLLMAPI():
     def __init__(self, base_url="http:///v1", model_name="Qwen"):
         self.model_name = model_name
         self.tokenizer = AutoTokenizer.from_pretrained("/141nfs/username/hf_models/gpt2")
-        self.client = OpenAI(base_url=base_url, api_key="sk-jlspXzMhnhze2fF9ds3WvVXK8LeaJIFW2ueGIiP8q6mFHy2s")
+        self.client = OpenAI(base_url=base_url, api_key="sk-***")
         print(f"use my vllm api, base url: {base_url}, model_name: {model_name}")
         
     def get_response(self, input_text, max_completion_tokens=4096, return_complete_completion=False, show_usage=False, enable_thinking=False):

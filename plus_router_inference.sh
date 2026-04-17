@@ -2,17 +2,12 @@ cd /141nfs/username/paper_register
 source /141nfs/username/anaconda3/bin/activate paper
 
 
+mkdir -p result
+
 return_seq_num=5
-
-
-
-
-# train_tag=SFT-AUG-GRPO-Tree_2.0
-
 
 model_name="Qwen3-0.6B"
 worker_num=50
-
 
 data_split=test
 

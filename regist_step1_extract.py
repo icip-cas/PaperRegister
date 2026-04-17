@@ -110,7 +110,7 @@ if __name__ == "__main__":
     save_dir_path = "registration"
     category_save_path = f"{save_dir_path}/category_{args.worker_id}.jsonl"
     extraction_save_path = f"{save_dir_path}/registration_step1_{args.worker_id}.jsonl"
-    extraction_save_big_path = f"{save_dir_path}/registration_step1.jsonl"
+    extraction_save_big_path = f"{save_dir_path}/registration_step1.jsonl" # all workers' data
     
     raw_papers = json.load(open(f"{save_dir_path}/raw_papers.json", "r"))[args.worker_id::args.worker_num]
     

@@ -61,7 +61,7 @@ if __name__ == "__main__":
     
     save_dir_path = "registration"
     extraction_save_path = f"{save_dir_path}/registration_step2_{args.worker_id}.jsonl"
-    extraction_save_big_path = f"{save_dir_path}/registration_step2.jsonl"
+    extraction_save_big_path = f"{save_dir_path}/registration_step2.jsonl" # all workers' data
 
     raw_datas = [json.loads(line) for line in open(f"{save_dir_path}/registration_step1.jsonl", "r")][args.worker_id::args.worker_num]
     
